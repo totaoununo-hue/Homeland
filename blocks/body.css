@@ -1,5 +1,8 @@
 body {
+  display: flex;
   font-family: "Inter";
   margin: 0 auto;
   padding: 0;
+  min-width: 1280px;
+  min-height: 5872px;
 }
