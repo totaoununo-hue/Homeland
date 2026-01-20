@@ -1,6 +1,5 @@
 # Homeland
 
-<<<<<<< HEAD
 Este projeto é um site estático para uma pagina sobre a terra natal, desenvolvido utilizando conhecimentos em HTML e CSS.
 
 ## Conhecimentos Utilizados
