@@ -1,0 +1,278 @@
+.places {
+  margin: 92px 148px 90px;
+}
+
+.place__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "title artist"
+    "image text"
+    "button text"
+    ". text";
+  column-gap: 40px;
+  row-gap: 48px;
+  padding-bottom: 80px;
+}
+
+.place__title {
+  grid-area: title;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.05;
+  margin: 0;
+  max-width: 460px;
+}
+
+.place__image {
+  grid-area: image;
+  object-fit: cover;
+  box-shadow: 10px 10px 25px 0px #00000080;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.place__image:hover {
+  opacity: 50%;
+  cursor: url(../images/cursor.png), auto;
+}
+
+.place__button {
+  grid-area: button;
+  text-decoration: none;
+  display: inline-block;
+  align-items: start;
+  width: 356.08px;
+  height: 22px;
+  border-radius: 4px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  gap: 10px;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+.place__button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+  transform: translateX(3px);
+  cursor: url(../images/cursor.png), auto;
+}
+
+.place__artist {
+  grid-area: artist;
+}
+
+.place__artist-info {
+  padding-top: 161px;
+  height: 67px;
+  opacity: 1;
+}
+
+.place__artist-berea {
+  padding-top: 31px;
+  width: 456px;
+  height: 45px;
+  opacity: 1;
+}
+
+.place__artist-burundi {
+  padding-top: 107px;
+  width: 456px;
+  height: 45px;
+  opacity: 1;
+  padding-bottom: 48px;
+}
+
+.place__artist-rio {
+  padding-top: 178px;
+  width: 340px;
+  height: 45px;
+  opacity: 1;
+}
+
+.place__text {
+  grid-area: text;
+}
+
+.place__description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  letter-spacing: 0%;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+  .places {
+    margin: 88px 24px 90px;
+    max-width: 720px;
+  }
+
+  .place__item {
+    display: grid;
+    grid-template-columns: repeat(2, 346px);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "title artist"
+      "image text"
+      "button text"
+      ". text";
+    column-gap: 28px;
+    row-gap: 48px;
+  }
+
+  .place__title {
+    align-self: end;
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 0;
+    font-family: Inter;
+    font-size: 42px;
+    padding: 0;
+  }
+
+  .place__image {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .place__button {
+    width: 315px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .place__artist {
+    align-self: end;
+    padding: 0;
+  }
+
+  .place__artist-info {
+    padding-top: 24px;
+    width: 352px;
+    height: 68px;
+  }
+
+  .place__artist-berea {
+    padding-top: 1px;
+    width: 352px;
+    height: 45px;
+  }
+
+  .place__artist-burundi {
+    padding-top: 47px;
+    width: 352px;
+    height: 45px;
+  }
+
+  .place__artist-rio {
+    padding-top: 42px;
+    width: 352px;
+    height: 45px;
+  }
+
+  .place__text {
+    max-width: 348px;
+  }
+
+  .place__description {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 544px) {
+  .places {
+    margin: 0;
+    margin-top: 62px;
+    max-width: 320px;
+  }
+
+  .place__item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "text"
+      "text"
+      "button";
+    row-gap: 30px;
+  }
+
+  .place__title {
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0 16px 0;
+    font-size: 32px;
+    max-width: 288px;
+  }
+
+  .place__artist {
+    max-width: 288px;
+    padding: 0;
+    padding-left: 16px;
+  }
+
+  .place__artist-info {
+    content: url(../images/places/artist_gales288.png);
+  }
+
+  .place__artist-burundi {
+    content: url(../images/places/burundi288.png);
+  }
+
+  .place__image {
+    max-width: 320px;
+    max-height: 320px;
+    box-shadow: none;
+  }
+
+  .place__button {
+    width: 248px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    margin: 0 16px 0;
+    padding: 16px 22px 16px;
+  }
+
+  .place__text {
+    padding: 0 16px 0;
+  }
+
+  .place__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.63;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  .place__last-paragraph {
+    padding-bottom: 0;
+  }
+}
