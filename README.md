@@ -1,5 +1,6 @@
 # Homeland
 
+<<<<<<< HEAD
 Este projeto é um site estático para uma pagina sobre a terra natal, desenvolvido utilizando conhecimentos em HTML e CSS.
 
 ## Conhecimentos Utilizados
@@ -17,4 +18,4 @@ Este projeto é um site estático para uma pagina sobre a terra natal, desenvolv
 - Controle de versão com Git.
 - Hospedagem no GitHub Pages.
 
-Link para o site: https://totaoununo-hue.github.io/web_project_homeland/
+# Link para o site: https://totaoununo-hue.github.io/Homeland/
